@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create New Customer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../scripts/style.css">
+
+</head>
+
+<body onload="getProducts('leadid')">
+
+    <div class="myform container">
+        <h2> Create Customer </h2>
+        </br>
+        </br>
+        <h4> Create values:</h4>
+        <label for="name">Name:</label> </br>
+        <input type="text" id="name" placeholder="Customer name"> </br>
+        </br>
+        <label for="phone">Phone:</label> </br>
+        <input type="number" id="phone" placeholder="Customer phone"> </br>
+        </br>
+        <label for="profession">Profession:</label> </br>
+        <input type="text" id="profession" placeholder="Customer profession"> </br>
+        </br>
+
+        <label for="select_id">select a Prospect id:</label> </br>
+        <select id="select_id"></select>
+        </br>
+        </br>
+        <button name="submit" id="submit" value="createCustomer" class="btn-primary btn">Create Prospect</button>
+        </br>
+        </br>
+        <table id="result" class="container"></table>
+    </div>
+
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/Validation-CS.js"></script>
+    <script src="../scripts/ajax.js"></script>
+
+
+
+</body>
+
+</html>
